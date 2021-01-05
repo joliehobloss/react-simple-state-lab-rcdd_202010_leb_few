@@ -19,8 +19,13 @@ export default class Matrix extends Component {
   }
   
 }
-
 Matrix.defaultProps = {
+  values: (() => {
+    const defRow = ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00']
+    return (new Array(10).fill(defRow))
+  })()
+}
+/*Matrix.defaultProps = {
  values:[
   ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'],
   ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'],
@@ -33,4 +38,4 @@ Matrix.defaultProps = {
   ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00'],
   ['#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00', '#F00']
 ]
-}
+}*/
