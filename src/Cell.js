@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 export default class Cell extends Component {
   
-  constructor(props) {
+  constructor() {
     super()
     this.state = {
-      color: props.value
+      color: this.props.value
     }
   }
   
@@ -24,5 +24,5 @@ export default class Cell extends Component {
   }
   
 }
-
+   
  
